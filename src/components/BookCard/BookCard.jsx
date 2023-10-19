@@ -2,6 +2,7 @@ import React from "react";
 import "./BookCard.css";
 import bookIcon from "../../assets/bookIcon.png";
 import authorAvatar from "../../assets/authorAvatar.png";
+import { BiSolidEditAlt } from "react-icons/bi";
 
 const BookCard = ({ title, country, language, num_pages, author }) => {
   return (
@@ -11,12 +12,15 @@ const BookCard = ({ title, country, language, num_pages, author }) => {
         <h2 className="book-card-title">
           {title.length > 10 ? title.slice(0, 10) + "..." : title}
         </h2>
-        <p>Country: {country}:</p>
-        <p>Language: {language}:</p>
-        <p>Total Pages: {num_pages}:</p>
+        <p>Country: {country}</p>
+        <p>Language: {language}</p>
+        <p>Total Pages: {num_pages}</p>
         <div className="authorSection">
-          <img src={authorAvatar} alt="" className="book-card-authorImg" />
-          <p className="book-card-author">Author: {author}</p>
+          <div className="authorSection-left">
+            <img src={authorAvatar} alt="" className="book-card-authorImg" />
+            <p className="book-card-author">Author: {author}</p>
+          </div>
+          <BiSolidEditAlt size={20} className="editIcon" />
         </div>
       </div>
     </>

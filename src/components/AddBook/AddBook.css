@@ -1,0 +1,25 @@
+.addBook-container {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.addBook-section {
+  width: 74.6875rem;
+  height: 31.1875rem;
+  border-radius: 3.125rem;
+  background: var(--primary, #fbf4e2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.addBook-title {
+  color: var(--secondary, #463c74);
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 7.25rem;
+  margin-bottom: 3rem;
+}

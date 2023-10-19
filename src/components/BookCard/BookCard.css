@@ -36,6 +36,11 @@
 .authorSection {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.authorSection-left {
+  display: flex;
+  align-items: center;
 }
 .book-card-author {
   color: #000;
@@ -50,4 +55,7 @@
   border-radius: 1.5rem;
   width: 1.5rem;
   height: 1.5rem;
+}
+.editIcon:hover {
+  color: forestgreen;
 }

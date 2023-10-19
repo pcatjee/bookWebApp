@@ -6,6 +6,7 @@
   height: 3.1875rem;
   border-radius: 0.5rem;
   background: var(--secondary, #b4d51e);
+  cursor: pointer;
 }
 .button-text {
   width: 6.3755rem;
