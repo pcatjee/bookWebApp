@@ -1,0 +1,77 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+  width: 74.937rem;
+  justify-content: space-between;
+}
+.logo {
+  color: #463c74;
+  text-align: center;
+  font-family: McLaren;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.logo-book {
+  color: #b4d51e;
+}
+.search-bar {
+  background-color: #f8f7f5;
+  width: 35.9375rem;
+  height: 3.1875rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding-right: 0.99rem;
+}
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: #f8f7f5;
+  color: rgba(70, 60, 116, 0.5);
+  padding-left: 2rem;
+  font-family: Merriweather;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.05625rem;
+}
+.search-icon {
+  cursor: pointer;
+}
+.menu-container {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+}
+.menu-items {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 2rem;
+  list-style-type: none;
+}
+.nav-item {
+  color: rgba(70, 60, 116, 0.5);
+  font-family: Merriweather;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.nav-item:active {
+  color: #463c74;
+  font-family: Merriweather;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

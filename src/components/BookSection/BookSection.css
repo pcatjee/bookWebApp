@@ -1,0 +1,40 @@
+.book-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.5rem;
+}
+.book-section-title {
+  color: var(--secondary, #463c74);
+  font-family: Merriweather;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+}
+.book-section-titleSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.62rem;
+  width: 74.937rem;
+}
+.book-section-viewAll {
+  color: var(--Gray-3, #828282);
+  font-family: Merriweather;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.075rem;
+  cursor: pointer;
+}
+.book-flex {
+  display: flex;
+  gap: 4.06rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 74.937rem;
+  margin-bottom: 5.06rem;
+}

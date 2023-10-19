@@ -1,0 +1,19 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.70494rem;
+  height: 3.1875rem;
+  border-radius: 0.5rem;
+  background: var(--secondary, #b4d51e);
+}
+.button-text {
+  width: 6.3755rem;
+  color: #fff;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
