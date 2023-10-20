@@ -19,6 +19,10 @@
   justify-content: space-between;
   margin-bottom: 2.62rem;
   width: 74.937rem;
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .book-section-viewAll {
   color: var(--Gray-3, #828282);
@@ -37,6 +41,9 @@
   justify-content: center;
   width: 74.937rem;
   margin-bottom: 5.06rem;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 .no-data {
   text-align: center;

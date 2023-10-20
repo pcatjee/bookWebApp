@@ -83,20 +83,6 @@ const BookSection = () => {
         </div>
       </div>
       <div className="book-flex">
-        {/* {data && data.data ? (
-          data.data.map((item) => (
-            <BookCard
-              key={item.id}
-              title={item.title}
-              country={item.country}
-              language={item.language}
-              num_pages={item.pages}
-              author={item.author}
-            />
-          ))
-        ) : (
-          <div>No data available yet.</div>
-        )} */}
         {currentData.length > 0 ? (
           currentData.map((item) => (
             <BookCard

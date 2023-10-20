@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footer-container">
-      <div>
+      <>
         <div className="footer-section">
           <div className="footer-left">
             <div className="footer-logo">
@@ -26,7 +26,7 @@ const Footer = () => {
         <p className="footer-copyright">
           © 2023 BookFinder. All rights reserved.
         </p>
-      </div>
+      </>
     </footer>
   );
 };

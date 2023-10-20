@@ -8,6 +8,9 @@
   margin-top: 4rem;
   width: 74.937rem;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 .logo {
   color: #463c74;
@@ -29,6 +32,10 @@
   display: flex;
   align-items: center;
   padding-right: 0.99rem;
+  @media (max-width: 768px) {
+    width: 90%;
+    margin-top: 1rem;
+  }
 }
 .search-input {
   flex: 1;
