@@ -75,3 +75,6 @@
   font-weight: 400;
   line-height: normal;
 }
+.nav-item:hover {
+  color: #463c74;
+}

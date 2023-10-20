@@ -1,0 +1,58 @@
+.searchResult-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.searchResult-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.searchResult-titleSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.62rem;
+  width: 74.937rem;
+}
+.searchResult-title {
+  color: var(--secondary, #463c74);
+  font-family: Merriweather;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+}
+.searchResult-sortContainer {
+  display: flex;
+  gap: 0.2rem;
+}
+.searchResult-sorting {
+  color: var(--Gray-3, #828282);
+  font-family: Merriweather;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.075rem;
+  cursor: pointer;
+}
+.sort-btn {
+  width: 6rem;
+  border-radius: 1.5rem;
+  background: grey;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 600;
+}
+.sort-btn-active {
+  width: 6rem;
+  border-radius: 1.5rem;
+  background: #b4d51e;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 600;
+}

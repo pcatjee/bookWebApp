@@ -1,17 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { PiMagnifyingGlass } from "react-icons/pi";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setSearchTerm } from "../../redux/searchSlice";
+import { fetchBooksByTitle } from "../../redux/findSlice";
 
 const Navbar = () => {
   const dispatch = useDispatch();
+  const [title, setTitle] = useState("");
+  const searchResults = useSelector((state) => state.find.data);
+  const sortingOrder = useSelector((state) => state.sort);
 
-  const handleInputChange = (e) => {
-    dispatch(setSearchTerm(e.target.value));
+  const handleSearch = () => {
+    dispatch(fetchBooksByTitle({ dispatch: dispatch, title, sortingOrder }));
   };
+
+  useEffect(() => {
+    if (searchResults?.data?.length > 0) {
+      handleSearch();
+    }
+  }, [sortingOrder]);
+
   return (
-    <section>
+    <nav>
       {/* Logo   section */}
       <div className="logo-container">
         <div className="logo-section">
@@ -26,12 +37,14 @@ const Navbar = () => {
               className="search-input"
               type="text"
               placeholder="Find the book you are looking for"
-              onChange={handleInputChange}
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
             />
             <PiMagnifyingGlass
               size={20}
               color="#463C7480"
               className="search-icon"
+              onClick={handleSearch}
             />
           </div>
         </div>
@@ -47,7 +60,7 @@ const Navbar = () => {
           <li className="nav-item">Blog</li>
         </ul>
       </div>
-    </section>
+    </nav>
   );
 };
 

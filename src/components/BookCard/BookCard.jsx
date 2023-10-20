@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./BookCard.css";
 import bookIcon from "../../assets/bookIcon.png";
 import authorAvatar from "../../assets/authorAvatar.png";
 import { BiSolidEditAlt } from "react-icons/bi";
+import Modal from "../Modal/Modal";
 
-const BookCard = ({ title, country, language, num_pages, author }) => {
+const BookCard = ({ id, title, country, language, num_pages, author }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <>
       <div className="book-card">
@@ -20,7 +29,13 @@ const BookCard = ({ title, country, language, num_pages, author }) => {
             <img src={authorAvatar} alt="" className="book-card-authorImg" />
             <p className="book-card-author">Author: {author}</p>
           </div>
-          <BiSolidEditAlt size={20} className="editIcon" />
+          <BiSolidEditAlt size={20} className="editIcon" onClick={openModal} />
+          <Modal
+            mode={"edit"}
+            isOpen={isModalOpen}
+            onClose={closeModal}
+            id={id}
+          />
         </div>
       </div>
     </>

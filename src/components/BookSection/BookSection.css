@@ -49,3 +49,30 @@
   letter-spacing: 0.05625rem;
   margin: 3rem 0 3rem 0;
 }
+.pagination {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.pagination-btn {
+  width: 4rem;
+  height: 2rem;
+  background-color: #b4d51e;
+  border: none;
+  outline: none;
+}
+.pagination-active {
+  width: 2rem;
+  height: 2rem;
+  background-color: #463c74;
+  color: white;
+  border: none;
+  outline: none;
+}
+.pagination-normal {
+  width: 2rem;
+  height: 2rem;
+  background-color: #b4d51e;
+  border: none;
+  outline: none;
+}
